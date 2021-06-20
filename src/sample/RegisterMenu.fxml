@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="140.0" prefWidth="158.0" stylesheets="@Style.css" styleClass="gridpane" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginMenuController">
+    <TextField fx:id="usernameField" prefHeight="27.0" prefWidth="196.0" promptText="username" styleClass="text-field"/>
+    <PasswordField fx:id="passwordField" promptText="password" styleClass="text-field" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <Button prefHeight="27.0" prefWidth="219.0" styleClass="button" text="sign up" GridPane.columnIndex="0" GridPane.rowIndex="2" onMouseClicked="#signUp" />
+
+    <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="47.0" GridPane.columnIndex="0" GridPane.rowIndex="3" onMouseClicked="#backToLoginMenu">
+        <graphic>
+            <ImageView fitHeight="22.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                <Image url="@left-arrow-icon.jpg" />
+            </ImageView>
+        </graphic>
+    </Button>
+    <Label fx:id="errorMessage" textFill="red" alignment="CENTER" GridPane.rowIndex="4"/>
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+      <RowConstraints />
+    </rowConstraints>
+
+
+</GridPane>

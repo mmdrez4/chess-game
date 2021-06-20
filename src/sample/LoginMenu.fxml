@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane stylesheets="@Style.css" styleClass="gridpane" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FirstSceneController">
+    <Label text="     CHESS GAME" textFill="darkblue" alignment="CENTER"/>
+    <Button styleClass="button" onMouseClicked="#createAccountClick" text="create an account" GridPane.columnIndex="0"
+            GridPane.rowIndex="1"/>
+    <Button styleClass="button" onMouseClicked="#deleteAccountClick" text="delete an account" GridPane.columnIndex="0"
+            GridPane.rowIndex="2"/>
+    <Button styleClass="button" onMouseClicked="#loginClick" text="           login           " GridPane.columnIndex="0"
+            GridPane.rowIndex="3"/>
+    <Button styleClass="button" onMouseClicked="#changePassClick" text="change password" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <Button styleClass="button" onMouseClicked="#exitClick" text="       exit game      " GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+</GridPane>

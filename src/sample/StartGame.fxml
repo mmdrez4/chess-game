@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<GridPane alignment="center" hgap="10" stylesheets="@Style.css" styleClass="gridpane" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainMenuController">
+    <TextField fx:id="opponentUsername" prefHeight="27.0" prefWidth="196.0" promptText="opponent username" styleClass="text-field" GridPane.rowIndex="0" />
+    <TextField fx:id="turnLimitField" prefHeight="27.0" prefWidth="196.0" promptText="turn limit number" styleClass="text-field" GridPane.rowIndex="1"/>
+    <TextField fx:id="undoNumber" prefHeight="27.0" prefWidth="196.0" promptText="undo number" styleClass="text-field" GridPane.rowIndex="2" />
+
+    <Button onMouseClicked="#applyClick" prefHeight="27.0" prefWidth="196.0" styleClass="button" text="Apply" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="47.0" GridPane.columnIndex="0" GridPane.rowIndex="4"
+            onMouseClicked="#backToMainMenu">
+        <graphic>
+            <ImageView fitHeight="22.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true"
+                       GridPane.columnIndex="0" GridPane.rowIndex="3">
+                <Image url="@left-arrow-icon.jpg"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Label fx:id="errorMessage" alignment="CENTER" textFill="red" GridPane.rowIndex="5" />
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+
+</GridPane>

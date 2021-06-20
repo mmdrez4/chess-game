@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" stylesheets="@Style.css" styleClass="gridpane" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainMenuController">
+    <children>
+        <Button mnemonicParsing="false" onMouseClicked="#startGame" prefHeight="27.0" prefWidth="117.0" styleClass="button" text="new game" />
+        <Button mnemonicParsing="false" onMouseClicked="#showScoreBoard" prefHeight="27.0" prefWidth="117.0" styleClass="button" text="score board" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Button maxWidth="Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#logOut" styleClass="button" text="log out" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

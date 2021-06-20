@@ -1,0 +1,19 @@
+.button{
+    -fx-background-color: lightcyan;
+    -fx-border-radius: 100px;
+}
+
+.button:hover{
+    -fx-background-color: cyan;
+    -fx-border-radius: 100px;
+}
+
+.text-field{
+    -fx-background-color: paleturquoise;
+    -fx-border-radius: 20px;
+}
+
+.gridpane{
+    -fx-background-color: lightGreen;
+}
+
